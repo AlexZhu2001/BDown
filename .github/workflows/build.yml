@@ -28,7 +28,7 @@ jobs:
         python -m unittest
     - name: Coverage test
       run: |
-        coverage run --sources . --parallel-mode -m unittest
+        coverage run --source . --parallel-mode -m unittest
         coverage combine
         coverage xml -i
     - name: Upload report to Codecov
